@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kafka-cluster-kraft
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: example-kafka
+    server: "https://kubernetes.default.svc"
+  source:
+    path: 21-kafka-cluster-kraft
+    repoURL: "https://github.com/dbgjerez/openshift-kafka-examples.git"
+    targetRevision: main
+  project: openshift-kafka-examples
