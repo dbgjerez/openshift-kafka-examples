@@ -9,6 +9,6 @@ spec:
     - listener: plain
       name: kafka-kraft
       namespace: kafka-kraft-example
-    # - listener: plain
-    #   name: kafka
-    #   namespace: kafka
+    - listener: plain
+      name: kafka-zookeeper
+      namespace: kafka-zookeeper-example

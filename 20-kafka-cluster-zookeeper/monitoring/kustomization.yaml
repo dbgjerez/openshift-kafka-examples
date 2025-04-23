@@ -4,4 +4,3 @@ resources:
   - kafka-cruise-control-cm.yaml
   - kafka-metrics-cm.yaml
   - prometheus
-  - grafana
