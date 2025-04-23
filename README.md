@@ -15,6 +15,8 @@ This repository contains a collection of practical examples for deploying and ma
 | `20-kafka-cluster-zookeeper`  | Example of deploying a Kafka cluster using Zookeeper as the coordinator.   |
 | `21-kafka-cluster-kraft`      | Example of deploying a Kafka cluster using KRaft mode (no Zookeeper).      |
 | `30-console`                  | Configuration to deploy a Kafka web console for monitoring and management. |
+| `40-kafka-topic`              | Example of creating a Kafka topic.                                         |
+| `50-kafka-user`               | Example of creating a Kafka user and grant roles.                          |
 | `gitops`                      | GitOps setup examples using ArgoCD on OpenShift.                           |
 
 ## Usage
