@@ -1,0 +1,14 @@
+apiVersion: console.streamshub.github.com/v1alpha1
+kind: Console
+metadata:
+  name: example-console
+  namespace: kafka-console
+spec:
+  hostname: ${KAFKA_CONSOLE_URL}
+  kafkaClusters:
+    - listener: plain
+      name: kafka-kraft
+      namespace: kafka-kraft-example
+    # - listener: plain
+    #   name: kafka
+    #   namespace: kafka
