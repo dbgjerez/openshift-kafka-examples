@@ -12,3 +12,6 @@ spec:
     repoURL: "https://github.com/dbgjerez/openshift-kafka-examples.git"
     targetRevision: main
   project: openshift-kafka-examples
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
