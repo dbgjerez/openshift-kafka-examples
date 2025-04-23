@@ -1,7 +1,7 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
-  name: kafka
+  name: kafka-kraft
   annotations:
     strimzi.io/kraft: "enabled"
     strimzi.io/node-pools: "enabled"
