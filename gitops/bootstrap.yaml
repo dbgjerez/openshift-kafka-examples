@@ -1,17 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kafka-console
+  name: openshift-kafka-examples-bootstrap
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: kafka-console
+    namespace: openshift-gitops
     server: "https://kubernetes.default.svc"
   source:
-    path: 30-console
+    path: gitops/applications
     repoURL: "https://github.com/dbgjerez/openshift-kafka-examples.git"
     targetRevision: main
   project: openshift-kafka-examples
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
